@@ -1,13 +1,3 @@
-/*
- ============================================================================
- Name        : Internet-of-Things.c
- Author      : Sofya Levental
- Version     :
- Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
- ============================================================================
- */
-
 #include <stdio.h>
 
 void print(int digit){
