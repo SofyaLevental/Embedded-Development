@@ -3,9 +3,13 @@
 #include <setjmp.h>
 #include <cmocka.h>
 
+#include "fibonacci.h"
+
 ///* A test case that does nothing and succeeds. */
 static void null_test_success(void **state) {
-	(void) state; /* unused */
+//	fibonacci(6);
+	int i = 5;
+	assert_int_equal(i, 5);
 }
 
 int main(void) {

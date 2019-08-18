@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "fibonacci.h"
 
 void print(int digit){
 	printf("%d ", digit);
