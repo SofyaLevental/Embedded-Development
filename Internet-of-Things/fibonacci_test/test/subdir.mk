@@ -17,7 +17,7 @@ C_DEPS += \
 test/fibonacci_test.o: ../test/fibonacci_test.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross GCC Compiler'
-	gcc -I"C:\Program Files (x86)\cmocka\include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"test/fibonacci_test.d" -o "$@" "$<"
+	gcc -I"C:\Program Files (x86)\cmocka\include" -include"C:\Learning\Internet_of_Things\Embedded-Development\Internet-of-Things\src\fibonacci" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"test/fibonacci_test.d" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

@@ -44,7 +44,7 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
-					<fileInfo id="cdt.managedbuild.config.gnu.cross.exe.debug.19129926.253786543" name="FibonacciSpec.c" rcbsApplicability="disable" resourcePath="src/fibonacci_test.c" toolsToInvoke="cdt.managedbuild.tool.gnu.cross.c.compiler.955692421.953912053">
+					<fileInfo id="cdt.managedbuild.config.gnu.cross.exe.debug.19129926.253786543" name="FibonacciSpec.c" rcbsApplicability="disable" resourcePath="test/fibonacci_test.c" toolsToInvoke="cdt.managedbuild.tool.gnu.cross.c.compiler.955692421.953912053">
 						<tool id="cdt.managedbuild.tool.gnu.cross.c.compiler.955692421.953912053" name="Cross GCC Compiler" superClass="cdt.managedbuild.tool.gnu.cross.c.compiler.955692421">
 							<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.1941651359" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 								<listOptionValue builtIn="false" value="&quot;C:\Program Files (x86)\cmocka\include&quot;"/>
@@ -103,7 +103,7 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
-					<fileInfo id="cdt.managedbuild.config.gnu.cross.exe.release.1731512474.1670236457" name="FibonacciSpec.c" rcbsApplicability="disable" resourcePath="src/fibonacci_test.c" toolsToInvoke="cdt.managedbuild.tool.gnu.cross.c.compiler.1831162139.2015931338">
+					<fileInfo id="cdt.managedbuild.config.gnu.cross.exe.release.1731512474.1670236457" name="FibonacciSpec.c" rcbsApplicability="disable" resourcePath="test/fibonacci_test.c" toolsToInvoke="cdt.managedbuild.tool.gnu.cross.c.compiler.1831162139.2015931338">
 						<tool id="cdt.managedbuild.tool.gnu.cross.c.compiler.1831162139.2015931338" name="Cross GCC Compiler" superClass="cdt.managedbuild.tool.gnu.cross.c.compiler.1831162139">
 							<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.1887095116" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 								<listOptionValue builtIn="false" value="&quot;C:\Program Files (x86)\cmocka\include&quot;"/>
@@ -163,7 +163,7 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
-					<fileInfo id="cdt.managedbuild.config.gnu.cross.exe.debug.19129926.674539260.spec/FibonacciSpec.c" name="FibonacciSpec.c" rcbsApplicability="disable" resourcePath="src/fibonacci_test.c" toolsToInvoke="cdt.managedbuild.tool.gnu.cross.c.compiler.1823115539">
+					<fileInfo id="cdt.managedbuild.config.gnu.cross.exe.debug.19129926.674539260.spec/FibonacciSpec.c" name="FibonacciSpec.c" rcbsApplicability="disable" resourcePath="test/fibonacci_test.c" toolsToInvoke="cdt.managedbuild.tool.gnu.cross.c.compiler.1823115539">
 						<tool id="cdt.managedbuild.tool.gnu.cross.c.compiler.1823115539" name="Cross GCC Compiler" superClass="cdt.managedbuild.tool.gnu.cross.c.compiler.270977993">
 							<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.180295392" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 								<listOptionValue builtIn="false" value="&quot;C:\Program Files (x86)\cmocka\include&quot;"/>
@@ -201,7 +201,9 @@
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.1444788292" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
 								<option defaultValue="gnu.c.debugging.level.max" id="gnu.c.compiler.option.debugging.level.520833423" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" valueType="enumerated"/>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="gnu.c.compiler.option.include.paths.1105752830" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath"/>
-								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="gnu.c.compiler.option.include.files.1785068979" name="Include files (-include)" superClass="gnu.c.compiler.option.include.files" useByScannerDiscovery="false" valueType="includeFiles"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.files.1785068979" name="Include files (-include)" superClass="gnu.c.compiler.option.include.files" useByScannerDiscovery="false" valueType="includeFiles">
+									<listOptionValue builtIn="false" value="&quot;C:\Learning\Internet_of_Things\Embedded-Development\Internet-of-Things\src\fibonacci&quot;"/>
+								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1859979950" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.compiler.1100299236" name="Cross G++ Compiler" superClass="cdt.managedbuild.tool.gnu.cross.cpp.compiler">
@@ -214,7 +216,6 @@
 								</option>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.link.option.paths.699460757" name="Library search path (-L)" superClass="gnu.c.link.option.paths" useByScannerDiscovery="false" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;C:\Program Files (x86)\cmocka\bin&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;C:\Learning\Internet_of_Things\Embedded-Development\Internet-of-Things\src&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1646641955" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -224,14 +225,14 @@
 							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.linker.1062405115" name="Cross G++ Linker" superClass="cdt.managedbuild.tool.gnu.cross.cpp.linker"/>
 							<tool id="cdt.managedbuild.tool.gnu.cross.archiver.870299548" name="Cross GCC Archiver" superClass="cdt.managedbuild.tool.gnu.cross.archiver"/>
 							<tool id="cdt.managedbuild.tool.gnu.cross.assembler.1706871150" name="Cross GCC Assembler" superClass="cdt.managedbuild.tool.gnu.cross.assembler">
-								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.both.asm.option.include.paths.1223133085" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.both.asm.option.include.paths.1223133085" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;C:\Program Files (x86)\cmocka\include&quot;"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1128660287" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
 							</tool>
 						</toolChain>
 					</folderInfo>
-					<fileInfo id="cdt.managedbuild.config.gnu.cross.exe.debug.19129926.356046728.test/FibonacciTest.c" name="FibonacciSpec.c" rcbsApplicability="disable" resourcePath="src/fibonacci_test.c" toolsToInvoke="cdt.managedbuild.tool.gnu.cross.c.compiler.1799737556">
+					<fileInfo id="cdt.managedbuild.config.gnu.cross.exe.debug.19129926.356046728.test/FibonacciTest.c" name="FibonacciSpec.c" rcbsApplicability="disable" resourcePath="test/fibonacci_test.c" toolsToInvoke="cdt.managedbuild.tool.gnu.cross.c.compiler.1799737556">
 						<tool id="cdt.managedbuild.tool.gnu.cross.c.compiler.1799737556" name="Cross GCC Compiler" superClass="cdt.managedbuild.tool.gnu.cross.c.compiler.757693851">
 							<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.1408635506" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 								<listOptionValue builtIn="false" value="&quot;C:\Program Files (x86)\cmocka\include&quot;"/>
@@ -254,6 +255,11 @@
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="fibonacci"/>
+		<configuration configurationName="fibonacci_test">
+			<resource resourceType="PROJECT" workspacePath="/Internet-of-Things"/>
+		</configuration>
+		<configuration configurationName="fibonacciTests"/>
 		<configuration configurationName="Debug">
 			<resource resourceType="PROJECT" workspacePath="/Internet-of-Things"/>
 		</configuration>

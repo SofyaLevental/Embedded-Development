@@ -8,7 +8,7 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include src/subdir.mk
+-include test/subdir.mk
 -include subdir.mk
 -include objects.mk
 
@@ -29,7 +29,7 @@ all: Internet-of-Things
 Internet-of-Things: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross GCC Linker'
-	gcc -L"C:\Program Files (x86)\cmocka\bin" -L"C:\Learning\Internet_of_Things\Embedded-Development\Internet-of-Things\src" -o "Internet-of-Things" $(OBJS) $(USER_OBJS) $(LIBS)
+	gcc -L"C:\Program Files (x86)\cmocka\bin" -o "Internet-of-Things" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

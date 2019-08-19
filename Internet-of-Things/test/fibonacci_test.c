@@ -7,7 +7,7 @@
 
 ///* A test case that does nothing and succeeds. */
 static void null_test_success(void **state) {
-//	fibonacci(6);
+	fibonacci(6);
 	int i = 5;
 	assert_int_equal(i, 5);
 }
