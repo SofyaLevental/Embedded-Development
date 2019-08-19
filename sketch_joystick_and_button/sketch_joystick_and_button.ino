@@ -9,19 +9,26 @@ void setup() {
   Serial.println("UNO is ready!");
 }
 
+boolean commandsFromValue(char commandMin, char commandMax, int value){
+  if(value>100){
+      Serial.println(commandMax);
+    } else if(value<-100){
+      Serial.println(commandMin);
+    }
+}
+
 void loop() {
-  xVal = analogRead(xAxisPin);
-  yVal = analogRead(yAxisPin);
+  xVal = analogRead(yAxisPin) - 511;
+  yVal = analogRead(xAxisPin) - 511;
   button = digitalRead(buttonPin);
-  
-  Serial.print("X: ");
-  Serial.print(xVal);
-  Serial.print(" ");
-  Serial.print("Y: ");
-  Serial.print(yVal);
-  Serial.print(" ");
-  Serial.print("B: ");
-  Serial.println(button);
+
+  if(button == 1){
+    Serial.println('Q');
+  } else if(abs(xVal)>abs(yVal)){
+    commandsFromValue('L','R',xVal);
+  } else{
+    commandsFromValue('D','U',yVal);
+  }
 
   delay(100);
 }
