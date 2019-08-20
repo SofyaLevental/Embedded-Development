@@ -2,7 +2,6 @@
 #define FIBONACCI_H
 
 void print(int digit);
-void fibonacci(int numberOfDigits);
-int main(void);
+int fibonacci(int n);
 
 #endif

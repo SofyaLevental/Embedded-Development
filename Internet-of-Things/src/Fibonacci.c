@@ -5,29 +5,18 @@ void print(int digit){
 	printf("%d ", digit);
 }
 
-void fibonacci(int numberOfDigits){
-	if(numberOfDigits>0){
-		int secondLastDigit = 0;
-		print(secondLastDigit);
-		if(numberOfDigits>1){
-			int lastDigit = 1;
-			print(lastDigit);
-			if (numberOfDigits>2){
-				int i = 2;
-				int memoryDigit;
-				while(i<numberOfDigits){
-					memoryDigit=lastDigit;
-					lastDigit=lastDigit+secondLastDigit;
-					secondLastDigit=memoryDigit;
-					print(lastDigit);
-					i++;
-				}
-			}
-		}
+int fibonacci(int n) {
+	if (n == 1 || n == 2) {
+		return 1;
+	} else if (n > 2) {
+		return fibonacci(n-2) + fibonacci(n-1);
+	} else {
+		return 0;
 	}
 }
-
-int main(void) {
-	fibonacci(6);
-	return 0;
-}
+//
+//int main(){
+//	for(int i=1; i<=6; i++){
+//		print(fibonacci(i));
+//	}
+//}
