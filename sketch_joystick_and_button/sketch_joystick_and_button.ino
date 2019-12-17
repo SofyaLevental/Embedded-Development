@@ -19,8 +19,11 @@ boolean commandsFromValue(char commandMin, char commandMax, int value){
 
 void loop() {
   xVal = analogRead(yAxisPin) - 511;
+  Serial.println(xVal);
   yVal = analogRead(xAxisPin) - 511;
+  Serial.println(yVal);
   button = digitalRead(buttonPin);
+  Serial.println(button);
 
   if(button == 1){
     Serial.println('Q');
